@@ -1,0 +1,13 @@
+name = "DSfG_CareerVillage"
+uuid = "f029fe30-3ba4-11e9-365b-4f985ddf8e10"
+authors = ["outcastgeek "]
+repository = "https://github.com/outcastgeek/DSfG_CareerVillage.git"
+version = "0.1.0"
+
+[deps]
+Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Weave = "44d3d7a6-8a23-5bf8-98c5-b353f8df5ec9"
