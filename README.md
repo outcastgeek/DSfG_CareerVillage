@@ -1,5 +1,9 @@
-# Data Science for Good: CareerVillage.org
+# [Data Science for Good: CareerVillage.org](https://www.kaggle.com/c/data-science-for-good-careervillage#description)
 **Match career advice questions with professionals in the field**
+
+## Report
+
+[DataExploration](https://htmlpreview.github.io/?https://raw.githubusercontent.com/outcastgeek/DSfG_CareerVillage/master/html/DataExploration.html)
 
 ## Create
 
@@ -25,6 +29,8 @@ julia> Pkg.add.(["Weave", "IJulia", "Compose", "Gadfly", "Flux", "Random"])
 ## Setup
 
 ```bash
+git lfs install # Initialize Git Large File Storage (https://git-lfs.github.com/)
+git lfs track "data/*.csv"
 cd /path/to/workspace/DSfG_CareerVillage
 julia # Start the REPL
 ```

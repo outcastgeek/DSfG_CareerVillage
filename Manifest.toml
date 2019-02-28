@@ -45,6 +45,12 @@ git-tree-sha1 = "055eb2690182ebc31087859c3dd8598371d3ef9e"
 uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
 version = "0.5.3"
 
+[[CSV]]
+deps = ["CategoricalArrays", "DataFrames", "DataStreams", "Dates", "Mmap", "Parsers", "Profile", "Random", "Tables", "Test", "Unicode", "WeakRefStrings"]
+git-tree-sha1 = "b92c6f626a044cc9619156d54994b94084d40abe"
+uuid = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+version = "0.4.3"
+
 [[Calculus]]
 deps = ["Compat"]
 git-tree-sha1 = "f60954495a7afcee4136f78d1d60350abd37a409"
@@ -116,6 +122,18 @@ deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
 uuid = "7ad07ef1-bdf2-5661-9d2b-286fd4296dac"
 version = "0.1.0"
+
+[[DataFrames]]
+deps = ["CategoricalArrays", "CodecZlib", "Compat", "DataStreams", "Dates", "InteractiveUtils", "IteratorInterfaceExtensions", "LinearAlgebra", "Missings", "Printf", "Random", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Test", "TranscodingStreams", "Unicode", "WeakRefStrings"]
+git-tree-sha1 = "9cfed75401d25d281076eb5d82de148ac2933f9e"
+uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+version = "0.17.1"
+
+[[DataStreams]]
+deps = ["Dates", "Missings", "Test", "WeakRefStrings"]
+git-tree-sha1 = "69c72a1beb4fc79490c361635664e13c8e4a9548"
+uuid = "9a8bc11e-79be-5b39-94d7-1ccc349a1a85"
+version = "0.4.1"
 
 [[DataStructures]]
 deps = ["InteractiveUtils", "OrderedCollections", "Random", "Serialization", "Test"]
@@ -388,6 +406,12 @@ git-tree-sha1 = "70bdbfb2bceabb15345c0b54be4544813b3444e4"
 uuid = "d96e819e-fc66-5662-9728-84c9c7592b0a"
 version = "0.10.3"
 
+[[Parsers]]
+deps = ["Dates", "Mmap", "Test", "WeakRefStrings"]
+git-tree-sha1 = "fa95f29a7dc171e896e6dd74e25dddbccee2e0a5"
+uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
+version = "0.2.18"
+
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
@@ -551,6 +575,12 @@ deps = ["Compat"]
 git-tree-sha1 = "c9d5aa108588b978bd859554660c8a5c4f2f7669"
 uuid = "81def892-9a0e-5fdd-b105-ffc91e053289"
 version = "1.1.3"
+
+[[WeakRefStrings]]
+deps = ["Missings", "Random", "Test"]
+git-tree-sha1 = "cf70c71939e621a3fac4156a8bfb3c80d745794a"
+uuid = "ea10d353-3f73-51f8-a26c-33c1cb351aa5"
+version = "0.5.7"
 
 [[Weave]]
 deps = ["Base64", "Compat", "Dates", "Highlights", "JSON", "Markdown", "Mustache", "Pkg", "Printf", "REPL", "Requires", "Serialization", "Test", "YAML"]
