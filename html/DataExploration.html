@@ -700,8 +700,45 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>answers</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/answers.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>answers</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>answers</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/answers.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>answers</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+5-element Array&#123;Symbol,1&#125;:
+ :answers_id         
+ :answers_author_id  
+ :answers_question_id
+ :answers_date_added 
+ :answers_body
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>answers</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>answers_id</th><th>answers_author_id</th><th>answers_question_id</th><th>answers_date_added</th><th>answers_body</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 5 columns</p><tr><th>1</th><td>4e5f01128cae4f6d8fd697cec5dca60c</td><td>36ff3b3666df400f956f8335cf53e09e</td><td>332a511f1569444485cf7a7a556a5e54</td><td>2016-04-29 19:40:14 UTC+0000</td><td>&lt;p&gt;Hi!&lt;/p&gt;\n&lt;p&gt;You are asking a very interesting question.  I am giving you two sites that will give you some of an explanation that may answer your question.&lt;/p&gt;\n&lt;p&gt;http://mathforum.org/dr.math/faq/faq.why.math.html&lt;/p&gt;\n&lt;p&gt;http://www.mathworksheetscenter.com/mathtips/mathissoimportant.html&lt;/p&gt;\n&lt;p&gt;Let me know if this helps&lt;/p&gt;</td></tr><tr><th>2</th><td>ada720538c014e9b8a6dceed09385ee3</td><td>2aa47af241bf42a4b874c453f0381bd4</td><td>eb80205482e4424cad8f16bc25aa2d9c</td><td>2018-05-01 14:19:08 UTC+0000</td><td>&lt;p&gt;Hi. I joined the Army after I attended college and received a Bachelor's Degree in Criminal Justice.  Commissioned officers enter the Military with a four year degree or receive officer training after joining and complete a tour. You can prepare yourself by taking Reserve Officer Training Corps (ROTC) while in high school or a university. You can also attend Officer Candidate School (OCS) after graduating from college or become commissioned by earning a professional degree. If you decide to earn a degree, think about what you would like to do while in the military.  The experience in the military was very rewarding. I wish you well and much success in your future. &lt;/p&gt;</td></tr><tr><th>3</th><td>eaa66ef919bc408ab5296237440e323f</td><td>cbd8f30613a849bf918aed5c010340be</td><td>eb80205482e4424cad8f16bc25aa2d9c</td><td>2018-05-02 02:41:02 UTC+0000</td><td>&lt;p&gt;Dear Priyanka,&lt;/p&gt;&lt;p&gt;Greetings! I have answered this question to Eshwari few days ago. I am going to reproduce that answer with bit of modifications as required for better clarity. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;From your background, I could make out that you are from Bangalore and a student of 10th standard but your location is Rhode Island, USA. So I am not very clear as to which Army you wish to join ? Is it the US Army or the Indian Army? It is important to know that very few foreign nationals can join Indian Army (like Nepali citizens etc.). So you have to ascertain for yourself as to which citizenship you hold and accordingly you can join armed forces of the respective countries. Both are highly professional armies and respected a lot. I shall answer the modalities about the Indian Army, assuming that is the natural choice.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;So, to answer your query, there are following options for you to become army officer:&lt;/p&gt;&lt;ol&gt;&lt;li&gt; Do your B.Sc  and that will be good as you have wider choices including flying branches in air force and executive branches in Navy. Similarly BA/B.Com if you are not looking for flying or executive branches. &lt;/li&gt;&lt;li&gt;  Should you wish to be doctor in Army then you can appear for entrance Test for AFMC, Pune or Army Dental College after class 12th with PCMB. However, you can do the same by attending Medical colleges from civil institutes in India/abroad.  &lt;/li&gt;&lt;li&gt; You can also join Military Nursing Services after B.Sc or Diploma in Nursing but majority of them are trained within army organisations (after 12th only  with PCMB). &lt;/li&gt;&lt;li&gt; You can join after doing your graduation in Engineering (Civil, Mech, Electrical, Electronics or Computer Sciences) or Masters in Physics with Electronics or Computers for engineering branches.&lt;/li&gt;&lt;li&gt;You can also join in Education Corps by doing M.Sc/MA/M.Com with or without B.Ed or in Legal services by doing your Law Degree. &lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After your basic education, application and selection test processes, one has to clear SSB (Services Selection Board) which is a very stringent 5 days test (compulsory for all including Women officers except medical professionals). It is one of the best methods of test I know to assess the suitability for military services (as officers), a proven method of testing of one's psyche, leadership qualities which takes  all the aspects of your personality into account and decide.  Although, success rate is pretty low but don't get disheartened and demotivated. Key to success in SSB is a sound mind with sound body, positive attitude and basic IQ.  If I could do with an average IQ and humble  educational backgrounds, why not you?  There were many friends (within my batch) of whom we thought that they will never make it to the SSB but they did qualify and now serving as  Major General. &lt;/p&gt;&lt;p&gt;Please refer the links given below and you can find scores of material to read about SSB on the net or through books.&lt;/p&gt;&lt;p&gt;All the Very Best! Jai Hind!&lt;/p&gt;&amp;lt;h1&amp;gt;&lt;br&gt;&amp;lt;/h1&amp;gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</td></tr><tr><th>4</th><td>1a6b3749d391486c9e371fbd1e605014</td><td>7e72a630c303442ba92ff00e8ea451df</td><td>4ec31632938a40b98909416bdd0decff</td><td>2017-05-10 19:00:47 UTC+0000</td><td>&lt;p&gt;I work for a global company who values highly international experience.  In fact, that is a key experience we look for in candidates.  Therefore, I'd say it would be wise to take advantage of the teaching opportunity - even if only for a year or 2.  You never know where it might lead and you will certainly have an edge on your return if you then look for employment in a global company.&lt;/p&gt;</td></tr><tr><th>5</th><td>5229c514000446d582050f89ebd4e184</td><td>17802d94699140b0a0d2995f30c034c6</td><td>2f6a9a99d9b24e5baa50d40d0ba50a75</td><td>2017-10-13 22:07:33 UTC+0000</td><td>I agree with Denise. Every single job I've had since my first internship in college, I've found through connections. I have also been surprised that in some cases, connections that I least expected were crucial in helping me find new opportunities. For example, I am about to start a new role that in a lot of ways, is my dream job. A few months ago, I connected with someone that used to be on my team at a different company. We only worked on the same team for about 2 months, and 5 years later, ended up working at another tech company in Seattle. He ended up being the hiring manager for this new role, and after passing the other interviews, I got the job. \n\nI would say the most important thing when starting your career is to define what you want your brand to be, and what you want to be known for. This will help give you guidance on what activities and events to prioritize, books to read, etc. \n\nIt's also essential to be mindful of the impression you leave with others. While networking is essential to building your career, it's important that it's also backed up by a reputation you feel proud about. \n\nAs a student, I remember this feeling like an incredibly daunting task. It made it easier for me to find a group I could relate to. I joined ALPFA, an association for Latino Professionals that work across various business disciplines. I would recommend finding an organization that speaks to you, and begin practicing your networking skills there.</td></tr><tr><th>6</th><td>5f62fadae80748c7907e3b0551bf4203</td><td>b03c3872daeb4a5cb1d8cd510942f0c4</td><td>2f6a9a99d9b24e5baa50d40d0ba50a75</td><td>2017-10-12 16:01:44 UTC+0000</td><td>Networking is a key component to progressing your career.  I've worked for several high tech organizations over many years and each job I was offered was because I knew someone who worked at the company who knew my skills and was able to advocate for me to get the job.  Without my professional and personal networks, it would have been much harder to get job offers and I may not have been as successful in my career.   \n\nDepending on the type of business/industry you would like to be in, you may have to start out as a team member or team contributor to grow your expertise in the business, possibly around a particular business function like operations, finance,  sales, etc.   As you become more knowledgeable and show your strengths in conducting your day to day work,  you will have a good chance to become a manager or leader of a team.   I do encourage you to take every networking opportunity that comes your way - join professional organizations, maybe your company or school offers networking activities you can join, and stay close to your social networks, you never know when a friend will help you find your next career move! </td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>answers</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -712,8 +749,45 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>comments</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/comments.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>comments</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>comments</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/comments.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>comments</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+5-element Array&#123;Symbol,1&#125;:
+ :comments_id               
+ :comments_author_id        
+ :comments_parent_content_id
+ :comments_date_added       
+ :comments_body
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>comments</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>comments_id</th><th>comments_author_id</th><th>comments_parent_content_id</th><th>comments_date_added</th><th>comments_body</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 5 columns</p><tr><th>1</th><td>f30250d3c2ca489db1afa9b95d481e08</td><td>9fc88a7c3323466dbb35798264c7d497</td><td>b476f9c6d9cd4c50a7bacdd90edd015a</td><td>2019-01-31 23:39:40 UTC+0000</td><td>First, you speak to recruiters. They are trained and knowledgable on all the requirements for each branch of service and can do the research for you on the specific job that you are looking at. \r\n\r\nAdditionally, birds of a feather do flock together. In high school, you can join groups like the Civil Air Patrol. The Civil Air Patrol is the auxiliary of the Air Force and many former and retired Air Force member within their ranks.</td></tr><tr><th>2</th><td>ca9bfc4ba9464ea383a8b080301ad72c</td><td>de2415064b9b445c8717425ed70fd99a</td><td>ef4b6ae24d1f4c3b977731e8189c7fd7</td><td>2019-01-31 20:30:47 UTC+0000</td><td>Most large universities offer study abroad programs.  The study abroad programs are found on the schools website.  You may have to click into the Undergraduate or Graduate links.   I also recommend reaching out to the university counselors.  The have wealth of information and details that may not be on the website. \r\n\r\nMy son will be studying in France and Sweden next year through DePaul University.   The University of Southern California has a very strong international program in which most students participate.  It's a great opportunity to learn the culture of other countries while in school.</td></tr><tr><th>3</th><td>c354f6e33956499aa8b03798a60e9386</td><td>6ed20605002a42b0b8e3d6ac97c50c7f</td><td>ca7a9d7a95df471c816db82ee758f57d</td><td>2019-01-31 18:44:04 UTC+0000</td><td>First, I want to put you at ease that the opposite can happen.  My dormmate that I was paired with my freshman year of college turned into one of my very best friends.  Second, we lived with another girl during our sophomore year; a good friend of ours that lived next to us the previous year.  To us, she was the annoying dormmate that you are mentioning and we already knew her!  Sometimes it takes living with someone to learn their annoying habits.  We could have swapped if someone else agreed to swap with us.  Instead we tried to talk to her about it.  When it did not get better, my other dormmate and I strategized how we could avoid the annoying habits.  For instance, we agreed that the habits were most annoying when we were trying to study so we studied elsewhere.</td></tr><tr><th>4</th><td>73a6223948714c5da6231937157e4cb7</td><td>d02f6d9faac24997a7003a59e5f34bd3</td><td>c7a88aa76f5f49b0830bfeb46ba17e4d</td><td>2019-01-31 17:53:28 UTC+0000</td><td>Your question submission was great! I just wanted to point out that if you break your original question into separate and slightly more specific points (like "In addition to the LSAT what is the Law School acceptance process like..." you might also get some great Advice from our professionals. General questions are always welcome too, just make sure to leave some detail (like you did) of why you are interested etc. Welcome to the CareerVillage community!</td></tr><tr><th>5</th><td>55a89a9061d44dd19569c45f90a22779</td><td>e78f75c543e84e1c94da1801d8560f65</td><td>c7a88aa76f5f49b0830bfeb46ba17e4d</td><td>2019-01-31 14:51:53 UTC+0000</td><td>Thank you. I'm new to this site. I'm sorry if what I put out there is spam. I will for sure read through those forums.</td></tr><tr><th>6</th><td>3661006cdb6f4595b193b8d9fbe21228</td><td>d02f6d9faac24997a7003a59e5f34bd3</td><td>30901132449849b2aa18f308306e89a2</td><td>2019-01-30 23:15:54 UTC+0000</td><td>My pleasure! I'm so glad I was helpful!</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>comments</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -724,8 +798,44 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>emails</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/emails.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>emails</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>emails</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/emails.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>emails</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+4-element Array&#123;Symbol,1&#125;:
+ :emails_id             
+ :emails_recipient_id   
+ :emails_date_sent      
+ :emails_frequency_level
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>emails</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>emails_id</th><th>emails_recipient_id</th><th>emails_date_sent</th><th>emails_frequency_level</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 4 columns</p><tr><th>1</th><td>2337714</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-12-07 01:05:40 UTC+0000</td><td>email_notification_daily</td></tr><tr><th>2</th><td>2336077</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-12-06 01:14:15 UTC+0000</td><td>email_notification_daily</td></tr><tr><th>3</th><td>2314660</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-11-17 00:38:27 UTC+0000</td><td>email_notification_daily</td></tr><tr><th>4</th><td>2312639</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-11-16 00:32:19 UTC+0000</td><td>email_notification_daily</td></tr><tr><th>5</th><td>2299700</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-11-08 00:16:40 UTC+0000</td><td>email_notification_daily</td></tr><tr><th>6</th><td>2288533</td><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>2018-11-02 23:02:12 UTC+0000</td><td>email_notification_daily</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>emails</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -736,8 +846,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>group_memberships</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/group_memberships.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>group_memberships</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>group_memberships</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/group_memberships.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>group_memberships</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :group_memberships_group_id
+ :group_memberships_user_id
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>group_memberships</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>group_memberships_group_id</th><th>group_memberships_user_id</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>eabbdf4029734c848a9da20779637d03</td><td>9a5aead62c344207b2624dba90985dc5</td></tr><tr><th>2</th><td>eabbdf4029734c848a9da20779637d03</td><td>ea7122da1c7b4244a2184a4f9f944053</td></tr><tr><th>3</th><td>eabbdf4029734c848a9da20779637d03</td><td>cba603f34acb4a40b3ccb53fe6681b5d</td></tr><tr><th>4</th><td>eabbdf4029734c848a9da20779637d03</td><td>fa9a126e63714641ae0145557a390cab</td></tr><tr><th>5</th><td>eabbdf4029734c848a9da20779637d03</td><td>299da113c5d1420ab525106c242c9429</td></tr><tr><th>6</th><td>7080bf8dcf78463bb03e6863887fd715</td><td>836a747118d6436caf56ff3a3c47289a</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>group_memberships</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -748,8 +892,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>groups</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/groups.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>groups</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>groups</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/groups.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>groups</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :groups_id        
+ :groups_group_type
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>groups</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>groups_id</th><th>groups_group_type</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>eabbdf4029734c848a9da20779637d03</td><td>youth program</td></tr><tr><th>2</th><td>7080bf8dcf78463bb03e6863887fd715</td><td>youth program</td></tr><tr><th>3</th><td>bc6fc50a2b444efc8ec47111b290ffb8</td><td>youth program</td></tr><tr><th>4</th><td>37f002e8d5e442ca8e36e972eaa55882</td><td>youth program</td></tr><tr><th>5</th><td>52419ff84d4b47bebd0b0a6c1263c296</td><td>youth program</td></tr><tr><th>6</th><td>559dbc7bd1f64c268ff149c4d5d63500</td><td>youth program</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>groups</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -760,8 +938,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>matches</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/matches.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>matches</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>matches</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/matches.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>matches</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :matches_email_id   
+ :matches_question_id
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>matches</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>matches_email_id</th><th>matches_question_id</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>1721939</td><td>332a511f1569444485cf7a7a556a5e54</td></tr><tr><th>2</th><td>1665388</td><td>332a511f1569444485cf7a7a556a5e54</td></tr><tr><th>3</th><td>1636634</td><td>332a511f1569444485cf7a7a556a5e54</td></tr><tr><th>4</th><td>1635498</td><td>332a511f1569444485cf7a7a556a5e54</td></tr><tr><th>5</th><td>1620298</td><td>332a511f1569444485cf7a7a556a5e54</td></tr><tr><th>6</th><td>1618336</td><td>332a511f1569444485cf7a7a556a5e54</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>matches</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -772,8 +984,45 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>professionals</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/professionals.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>professionals</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>professionals</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/professionals.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>professionals</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+5-element Array&#123;Symbol,1&#125;:
+ :professionals_id         
+ :professionals_location   
+ :professionals_industry   
+ :professionals_headline   
+ :professionals_date_joined
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>professionals</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>professionals_id</th><th>professionals_location</th><th>professionals_industry</th><th>professionals_headline</th><th>professionals_date_joined</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 5 columns</p><tr><th>1</th><td>9ced4ce7519049c0944147afb75a8ce3</td><td>missing</td><td>missing</td><td>missing</td><td>2011-10-05 20:35:19 UTC+0000</td></tr><tr><th>2</th><td>f718dcf6d2ec4cb0a52a9db59d7f9e67</td><td>missing</td><td>missing</td><td>missing</td><td>2011-10-05 20:49:21 UTC+0000</td></tr><tr><th>3</th><td>0c673e046d824ec0ad0ebe012a0673e4</td><td>New York, New York</td><td>missing</td><td>missing</td><td>2011-10-18 17:31:26 UTC+0000</td></tr><tr><th>4</th><td>977428d851b24183b223be0eb8619a8c</td><td>Boston, Massachusetts</td><td>missing</td><td>missing</td><td>2011-11-09 20:39:29 UTC+0000</td></tr><tr><th>5</th><td>e2d57e5041a44f489288397c9904c2b2</td><td>missing</td><td>missing</td><td>missing</td><td>2011-12-10 22:14:44 UTC+0000</td></tr><tr><th>6</th><td>c9bfa93898594cbbace436deca644c64</td><td>missing</td><td>missing</td><td>missing</td><td>2011-12-12 14:25:46 UTC+0000</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>professionals</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -784,8 +1033,45 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>questions</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/questions.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>questions</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>questions</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/questions.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>questions</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+5-element Array&#123;Symbol,1&#125;:
+ :questions_id        
+ :questions_author_id 
+ :questions_date_added
+ :questions_title     
+ :questions_body
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>questions</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>questions_id</th><th>questions_author_id</th><th>questions_date_added</th><th>questions_title</th><th>questions_body</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 5 columns</p><tr><th>1</th><td>332a511f1569444485cf7a7a556a5e54</td><td>8f6f374ffd834d258ab69d376dd998f5</td><td>2016-04-26 11:14:26 UTC+0000</td><td>Teacher   career   question</td><td>What  is  a  maths  teacher?   what  is  a  maths  teacher  useful? #college #professor #lecture</td></tr><tr><th>2</th><td>eb80205482e4424cad8f16bc25aa2d9c</td><td>acccbda28edd4362ab03fb8b6fd2d67b</td><td>2016-05-20 16:48:25 UTC+0000</td><td>I want to become an army officer. What can I do to become an army officer?</td><td>I am Priyanka from Bangalore . Now am in 10th std . When I go to college I should not get confused on what I want to take to become army officer. So I am asking this question  #military #army</td></tr><tr><th>3</th><td>4ec31632938a40b98909416bdd0decff</td><td>f2c179a563024ccc927399ce529094b5</td><td>2017-02-08 19:13:38 UTC+0000</td><td>Will going abroad for your first job increase your chances for jobs back home?</td><td>I'm planning on going abroad for my first job. It will be a teaching job and I don't have any serious career ideas. I don't know what job I would be working if I stay home instead so I'm assuming staying or leaving won't makeba huge difference in what I care about, unless I find something before my first job. I can think of ways that going abroad can be seen as good and bad. I do not know which side respectable employers willl side with. #working-abroad #employment- #overseas</td></tr><tr><th>4</th><td>2f6a9a99d9b24e5baa50d40d0ba50a75</td><td>2c30ffba444e40eabb4583b55233a5a4</td><td>2017-09-01 14:05:32 UTC+0000</td><td>To become a specialist in business  management, will I have to network myself?</td><td>i hear business management is a hard way to get a job if you're not known in the right areas. #business #networking </td></tr><tr><th>5</th><td>5af8880460c141dbb02971a1a8369529</td><td>aa9eb1a2ab184ebbb00dc01ab663428a</td><td>2017-09-01 02:36:54 UTC+0000</td><td>Are there any scholarships out there for students that are first generation and live in GA?</td><td>I'm trying to find scholarships for first year students but they all seem to be for other states besides GA. Any help??\r\n\r\n#college\r\n#scholarships \r\n#highschoolsenior \r\n#firstgeneration \r\n</td></tr><tr><th>6</th><td>7c336403258f4da3a2e0955742c76462</td><td>d1e4587c0e784c62bc27eb8d16a07f38</td><td>2017-03-01 04:27:08 UTC+0000</td><td>How many years of coege do you need to be an engineer</td><td>To be an engineer #united-states</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>questions</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -796,8 +1082,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>school_memberships</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/school_memberships.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>school_memberships</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>school_memberships</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/school_memberships.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>school_memberships</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :school_memberships_school_id
+ :school_memberships_user_id
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>school_memberships</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>school_memberships_school_id</th><th>school_memberships_user_id</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>197406</td><td>23dce13ca6164a73aec7a3cd56a4884d</td></tr><tr><th>2</th><td>197398</td><td>23dce13ca6164a73aec7a3cd56a4884d</td></tr><tr><th>3</th><td>199821</td><td>23dce13ca6164a73aec7a3cd56a4884d</td></tr><tr><th>4</th><td>186239</td><td>9c5803ae43ca4cf6b27ea85871625116</td></tr><tr><th>5</th><td>182063</td><td>9c5803ae43ca4cf6b27ea85871625116</td></tr><tr><th>6</th><td>197893</td><td>9c5803ae43ca4cf6b27ea85871625116</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>school_memberships</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -808,8 +1128,43 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>students</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/students.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>students</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>students</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/students.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>students</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+3-element Array&#123;Symbol,1&#125;:
+ :students_id         
+ :students_location   
+ :students_date_joined
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>students</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>students_id</th><th>students_location</th><th>students_date_joined</th></tr><tr><th></th><th>String⍰</th><th>String⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 3 columns</p><tr><th>1</th><td>12a89e96755a4dba83ff03e03043d9c0</td><td>missing</td><td>2011-12-16 14:19:24 UTC+0000</td></tr><tr><th>2</th><td>e37a5990fe354c60be5e87376b08d5e3</td><td>missing</td><td>2011-12-27 03:02:44 UTC+0000</td></tr><tr><th>3</th><td>12b402cceeda43dcb6e12ef9f2d221ea</td><td>missing</td><td>2012-01-01 05:00:00 UTC+0000</td></tr><tr><th>4</th><td>a0f431fc79794edcb104f68ce55ab897</td><td>missing</td><td>2012-01-01 05:00:00 UTC+0000</td></tr><tr><th>5</th><td>23aea4702d804bd88d1e9fb28074a1b4</td><td>missing</td><td>2012-01-01 05:00:00 UTC+0000</td></tr><tr><th>6</th><td>18a8f9363cd24a37b690e1b205146b14</td><td>missing</td><td>2012-01-01 05:00:00 UTC+0000</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>students</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -820,8 +1175,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>tag_questions</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tag_questions.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_questions</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>tag_questions</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tag_questions.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_questions</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :tag_questions_tag_id     
+ :tag_questions_question_id
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_questions</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>tag_questions_tag_id</th><th>tag_questions_question_id</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>28930</td><td>cb43ebee01364c68ac61d347a393ae39</td></tr><tr><th>2</th><td>28930</td><td>47f55e85ce944242a5a347ab85a8ffb4</td></tr><tr><th>3</th><td>28930</td><td>ccc30a033a0f4dfdb2eb987012f25792</td></tr><tr><th>4</th><td>28930</td><td>e30b274e48d741f7bf50eb5e7171a3c0</td></tr><tr><th>5</th><td>28930</td><td>3d22742052df4989b311b4195cbb0f1a</td></tr><tr><th>6</th><td>28930</td><td>c79baebeb6d44726b6f70a2414fb69bc</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_questions</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -832,8 +1221,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>tag_users</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tag_users.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_users</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>tag_users</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tag_users.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_users</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :tag_users_tag_id 
+ :tag_users_user_id
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_users</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>tag_users_tag_id</th><th>tag_users_user_id</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>593</td><td>c72ab38e073246e88da7e9a4ec7a4472</td></tr><tr><th>2</th><td>1642</td><td>8db519781ec24f2e8bdc67c2ac53f614</td></tr><tr><th>3</th><td>638</td><td>042d2184ee3e4e548fc3589baaa69caf</td></tr><tr><th>4</th><td>11093</td><td>c660bd0dc1b34224be78a58aa5a84a63</td></tr><tr><th>5</th><td>21539</td><td>8ce1dca4e94240239e4385ed22ef43ce</td></tr><tr><th>6</th><td>1047</td><td>3330f8a7835346a2a91f9393ae21efee</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tag_users</span><span class='hljl-p'>)</span>
 </pre>
 
 
@@ -844,8 +1267,42 @@ pre.hljl > span.hljl-gt { }
 
 
 <pre class='hljl'>
-<span class='hljl-n'>tags</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tags.csv&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
-</span><span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tags</span><span class='hljl-p'>)</span>
+<span class='hljl-n'>tags</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>CSV</span><span class='hljl-oB'>.</span><span class='hljl-nf'>read</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;data/tags.csv&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<p>columns</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>names</span><span class='hljl-p'>(</span><span class='hljl-n'>tags</span><span class='hljl-p'>)</span>
+</pre>
+
+
+<pre class="output">
+2-element Array&#123;Symbol,1&#125;:
+ :tags_tag_id  
+ :tags_tag_name
+</pre>
+
+
+<p>head</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>first</span><span class='hljl-p'>(</span><span class='hljl-n'>tags</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>6</span><span class='hljl-p'>)</span>
+</pre>
+
+
+
+<table class="data-frame"><thead><tr><th></th><th>tags_tag_id</th><th>tags_tag_name</th></tr><tr><th></th><th>Int64⍰</th><th>String⍰</th></tr></thead><tbody><p>6 rows × 2 columns</p><tr><th>1</th><td>27490</td><td>college</td></tr><tr><th>2</th><td>461</td><td>computer-science</td></tr><tr><th>3</th><td>593</td><td>computer-software</td></tr><tr><th>4</th><td>27292</td><td>business</td></tr><tr><th>5</th><td>18217</td><td>doctor</td></tr><tr><th>6</th><td>54</td><td>engineering</td></tr></tbody></table>
+
+<p>description</p>
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>describe</span><span class='hljl-p'>(</span><span class='hljl-n'>tags</span><span class='hljl-p'>)</span>
 </pre>
 
 
