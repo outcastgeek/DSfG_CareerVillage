@@ -1,1 +1,14 @@
 data/*.csv filter=lfs diff=lfs merge=lfs -text
+data/emails.csv filter=lfs diff=lfs merge=lfs -text
+data/matches.csv filter=lfs diff=lfs merge=lfs -text
+data/professionals.csv filter=lfs diff=lfs merge=lfs -text
+data/school_memberships.csv filter=lfs diff=lfs merge=lfs -text
+data/students.csv filter=lfs diff=lfs merge=lfs -text
+data/tag_questions.csv filter=lfs diff=lfs merge=lfs -text
+data/answers.csv filter=lfs diff=lfs merge=lfs -text
+data/comments.csv filter=lfs diff=lfs merge=lfs -text
+data/questions.csv filter=lfs diff=lfs merge=lfs -text
+data/tag_users.csv filter=lfs diff=lfs merge=lfs -text
+data/tags.csv filter=lfs diff=lfs merge=lfs -text
+data/group_memberships.csv filter=lfs diff=lfs merge=lfs -text
+data/groups.csv filter=lfs diff=lfs merge=lfs -text

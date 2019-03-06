@@ -29,12 +29,16 @@ julia> Pkg.add.(["Weave", "IJulia", "Compose", "Gadfly", "Flux", "Random"])
 ## Setup
 
 ```bash
+brew install git-lfs # homebrew
 git lfs install # Initialize Git Large File Storage (https://git-lfs.github.com/)
 git lfs track "data/*.csv"
+git lfs fetch
+git lfs pull
 cd /path/to/workspace/DSfG_CareerVillage
 julia # Start the REPL
 ```
 
 ```julia
 julia> using Pkg; Pkg.activate(".")
+julia> Pkg.instantiate()
 ```
