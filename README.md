@@ -40,5 +40,6 @@ julia # Start the REPL
 
 ```julia
 julia> using Pkg; Pkg.activate(".")
+julia> Pkg.update()
 julia> Pkg.instantiate()
 ```
