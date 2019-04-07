@@ -38,8 +38,19 @@ cd /path/to/workspace/DSfG_CareerVillage
 julia # Start the REPL
 ```
 
+```bash
+# conda env export > environment.yml # happend previously sort of 
+conda env create -f environment.yml
+```
+
 ```julia
 julia> using Pkg; Pkg.activate(".")
 julia> Pkg.update()
 julia> Pkg.instantiate()
+```
+
+```julia
+julia> using IJulia; notebook(detached=true, dir="notebooks") # Do this to launch notebook
+## Or
+julia> using IJulia; jupyterlab(detached=true, dir="notebooks") # Do this to launch jupyterlab
 ```
